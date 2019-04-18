@@ -8,5 +8,5 @@ module.exports = {
     all: true,
     include: ['src/**'],
     exclude: ['src/**/*.test.js', 'src/**/*.unit.js', 'src/**/*.integration.js'],
-    reporter: ['html', 'text-summary'],
+    reporter: ['html', 'lcov', 'text-summary'],
 };
