@@ -14,7 +14,7 @@
             "jsx": false
         }
     },
-    "plugins": ["node", "prettier", "jest"],
+    "plugins": ["node", "prettier", "mocha"],
     "extends": ["eslint:recommended", "plugin:node/recommended", "prettier"],
     "rules": {
         "indent": ["error", 4, { "SwitchCase": 1 }],
@@ -29,7 +29,7 @@
         {
             "files": ["**/*.test.js", "**/*.unit.js", "**/*.integration.js"],
             "env": {
-                "jest": true
+                "mocha": true
             }
         }
     ]

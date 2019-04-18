@@ -5,6 +5,6 @@
         "moduleResolution": "node"
     },
     "typeAcquisition": {
-        "include": ["jest"]
+        "include": ["jest", "mocha", "chai"]
     }
 }
