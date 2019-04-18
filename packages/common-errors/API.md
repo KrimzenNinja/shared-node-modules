@@ -2,12 +2,12 @@
 
 ### Table of Contents
 
--   [IsRequiredError][1]
+-   [constructor][1]
     -   [Parameters][2]
 
-## IsRequiredError
+## constructor
 
-[packages/common-errors/src/is-required-error.js:11-22][3]
+[packages/common-errors/src/is-required-error.js:9-17][3]
 
 An error used when some value that is required was not provided
 
@@ -16,10 +16,10 @@ An error used when some value that is required was not provided
 -   `requiredValue` **[string][4]** The name of the required value
 -   `functionName` **[string][4]?** The name of the function where the required value was supposed to be provided too
 
-[1]: #isrequirederror
+[1]: #constructor
 
 [2]: #parameters
 
-[3]: https://github.com/KrimzenNinja/shared-node-modules/blob/c6634a09e47f1e1f39ff54a996dbc8c984d7e099/packages/common-errors/src/is-required-error.js#L11-L22 "Source code on GitHub"
+[3]: https://github.com/KrimzenNinja/shared-node-modules/blob/42ad42893db47ccc740a4c684f01d7710de6db85/packages/common-errors/src/is-required-error.js#L9-L17 "Source code on GitHub"
 
 [4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
