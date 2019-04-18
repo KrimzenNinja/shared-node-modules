@@ -1,12 +1,14 @@
 {
   "name": "@krimzen-ninja/common-errors",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "engines": {
     "node": "^10.14.1",
     "npm": ">= 6.4.1"
   },
   "description": "A collection of custom common errors that can be used across projects and modules.",
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "main": "./src/index.js",
   "scripts": {
     "coverage": "nyc mocha",
@@ -29,7 +31,10 @@
     "type": "git",
     "url": "git+https://github.com/KrimZen Ninja/krimzen-ninja-common-errors.git"
   },
-  "keywords": ["node", "KrimZen-Ninja"],
+  "keywords": [
+    "node",
+    "KrimZen-Ninja"
+  ],
   "author": "Ryan Kotzen <potz666@gmail.com> (https://github.com/KrimZen Ninja)",
   "license": "MIT",
   "bugs": {
