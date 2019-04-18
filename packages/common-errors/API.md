@@ -20,6 +20,6 @@ An error used when some value that is required was not provided
 
 [2]: #parameters
 
-[3]: https://github.com/KrimzenNinja/shared-node-modules/blob/7532cb16290469a25ac585bee7230bbd67dec4b5/packages/common-errors/src/is-required-error.js#L9-L17 "Source code on GitHub"
+[3]: https://github.com/KrimzenNinja/shared-node-modules/blob/cf5f7bdf34ebec9a060f4688cbe5ad776dbd8bfb/packages/common-errors/src/is-required-error.js#L9-L17 "Source code on GitHub"
 
 [4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
