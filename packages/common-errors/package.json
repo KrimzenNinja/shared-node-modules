@@ -2,7 +2,7 @@
   "name": "@krimzen-ninja/common-errors",
   "version": "0.3.3",
   "engines": {
-    "node": ">=8.1.2"
+    "node": ">=10.0.0"
   },
   "description": "A collection of custom common errors that can be used across projects and modules.",
   "files": [
@@ -14,10 +14,10 @@
     "codecov": "codecov",
     "test": "jest",
     "test-dependencies": "snyk test && nsp check",
-    "unit-test": "nyc mocha \"test/**/*.unit.js\"",
     "prettier": "prettier --write --tab-width=4 --single-quote=true --print-width=100 --no-semi \"{src,test}/**/*.js\"",
     "lint": "npm run lint-ci -- --fix",
     "lint-ci": "eslint \"src/**/*.js\" \"test/**/*.js\" \"config/**/*.js\"",
+    "update": "npm-check -Eu",
     "docs": "documentation build src/index.js --github --format md --output \"API.md\"",
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
@@ -39,11 +39,7 @@
   },
   "keywords": [
     "node",
-    "jest",
-    "circleci",
-    "codecov",
-    "documentation",
-    "KrimZenNinja"
+    "KrimZen-Ninja"
   ],
   "author": "Ryan Kotzen <potz666@gmail.com> (https://github.com/KrimZen Ninja)",
   "license": "MIT",
@@ -53,18 +49,19 @@
   "homepage": "https://github.com/KrimZen Ninja/krimzen-ninja-common-errors#readme",
   "devDependencies": {
     "codecov": "^3.0.0",
-    "documentation": "^5.3.3",
-    "eslint": "^4.12.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-prettier": "^2.3.1",
-    "jest-cli": "^21.2.1",
-    "npm-watch": "^0.3.0",
+    "documentation": "9.3.1",
+    "eslint": "5.16.0",
+    "eslint-config-prettier": "4.1.0",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-prettier": "3.0.1",
+    "jest-cli": "24.7.1",
+    "npm-check": "5.9.0",
+    "npm-watch": "0.6.0",
     "nsp": "^3.1.0",
     "prettier": "^1.8.2",
     "snyk": "^1.52.0"
   },
   "dependencies": {
-    "debug": "^3.1.0"
+    "debug": "4.1.1"
   }
 }
