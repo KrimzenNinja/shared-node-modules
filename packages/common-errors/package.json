@@ -5,14 +5,13 @@
     "node": "^10.14.1",
     "npm": ">= 6.4.1"
   },
-  "description": "A collection of custom common errors that can be used across projects and modules.",
-  "files": [
-    "src"
-  ],
+  "description":
+    "A collection of custom common errors that can be used across projects and modules.",
+  "files": ["src"],
   "main": "./src/index.js",
   "scripts": {
     "coverage": "nyc mocha",
-    "codecov": "codecov -F CommonErrors",
+    "codecov": "codecov",
     "lint-ci": "eslint \"src/**/*.js\"",
     "lint": "npm run lint-ci -- --fix",
     "test": "mocha",
@@ -24,23 +23,35 @@
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "preversion": "npm run prettier && npm run lint && npm run coverage && npm run snyk && npm run docs && git add . && git commit -m \"adding build artifacts\"",
+    "preversion":
+      "npm run prettier && npm run lint && npm run coverage && npm run snyk && npm run docs && git add . && git commit -m \"adding build artifacts\"",
     "postpublish": "git push origin master --follow-tags && chandler push"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KrimZen Ninja/krimzen-ninja-common-errors.git"
   },
-  "keywords": [
-    "node",
-    "KrimZen-Ninja"
-  ],
+  "keywords": ["node", "KrimZen-Ninja"],
   "author": "Ryan Kotzen <potz666@gmail.com> (https://github.com/KrimZen Ninja)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/KrimZen Ninja/krimzen-ninja-common-errors/issues"
   },
   "homepage": "https://github.com/KrimZen Ninja/krimzen-ninja-common-errors#readme",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "codecov": "^3.0.0",
+    "documentation": "9.3.1",
+    "eslint": "5.16.0",
+    "eslint-config-prettier": "4.1.0",
+    "eslint-plugin-mocha": "5.3.0",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-prettier": "3.0.1",
+    "npm-check": "5.9.0",
+    "nyc": "14.0.0",
+    "prettier": "^1.8.2",
+    "snyk": "^1.52.0"
+  },
   "dependencies": {
     "debug": "4.1.1",
     "mocha": "6.1.3"
