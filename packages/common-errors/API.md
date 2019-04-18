@@ -2,15 +2,24 @@
 
 ### Table of Contents
 
--   [IsRequiredError](#isrequirederror)
+-   [IsRequiredError][1]
+    -   [Parameters][2]
 
 ## IsRequiredError
 
-[src/IsRequiredError.js:11-22](https://github.com/KrimzenNinja/krimzen-ninja-common-errors/blob/e71896d219c5c5e0e14a778a2d94efc44b890f64/src/IsRequiredError.js#L11-L22 "Source code on GitHub")
+[packages/common-errors/src/is-required-error.js:11-22][3]
 
 An error used when some value that is required was not provided
 
-**Parameters**
+### Parameters
 
--   `requiredValue` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the required value
--   `functionName` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** The name of the function where the required value was supposed to be provided too
+-   `requiredValue` **[string][4]** The name of the required value
+-   `functionName` **[string][4]?** The name of the function where the required value was supposed to be provided too
+
+[1]: #isrequirederror
+
+[2]: #parameters
+
+[3]: https://github.com/KrimzenNinja/shared-node-modules/blob/c6634a09e47f1e1f39ff54a996dbc8c984d7e099/packages/common-errors/src/is-required-error.js#L11-L22 "Source code on GitHub"
+
+[4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String

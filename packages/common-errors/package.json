@@ -2,18 +2,18 @@
   "name": "@krimzen-ninja/common-errors",
   "version": "0.3.3",
   "engines": {
-    "node": ">=10.0.0"
+    "node": "^10.14.1",
+    "npm": ">= 6.4.1"
   },
-  "description": "A collection of custom common errors that can be used across projects and modules.",
-  "files": [
-    "src"
-  ],
+  "description":
+    "A collection of custom common errors that can be used across projects and modules.",
+  "files": ["src"],
   "main": "./src/index.js",
   "scripts": {
     "coverage": "npm test -- --coverage",
     "codecov": "codecov",
     "test": "jest",
-    "test-dependencies": "snyk test && nsp check",
+    "snyk": "snyk test",
     "prettier": "prettier --write \"src/**/*.js\"",
     "lint": "npm run lint-ci -- --fix",
     "lint-ci": "eslint \"src/**/*.js\"",
@@ -22,7 +22,8 @@
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "preversion": "npm run prettier && npm run lint && npm t && npm run test-dependencies && npm run docs && git add . && git commit -m \"adding build artifacts\"",
+    "preversion":
+      "npm run prettier && npm run lint && npm t && npm run snyk && npm run docs && git add . && git commit -m \"adding build artifacts\"",
     "postpublish": "git push origin master --follow-tags && chandler push"
   },
   "watch": {
@@ -37,10 +38,7 @@
     "type": "git",
     "url": "git+https://github.com/KrimZen Ninja/krimzen-ninja-common-errors.git"
   },
-  "keywords": [
-    "node",
-    "KrimZen-Ninja"
-  ],
+  "keywords": ["node", "KrimZen-Ninja"],
   "author": "Ryan Kotzen <potz666@gmail.com> (https://github.com/KrimZen Ninja)",
   "license": "MIT",
   "bugs": {
@@ -58,7 +56,6 @@
     "jest-cli": "24.7.1",
     "npm-check": "5.9.0",
     "npm-watch": "0.6.0",
-    "nsp": "^3.1.0",
     "prettier": "^1.8.2",
     "snyk": "^1.52.0"
   },
