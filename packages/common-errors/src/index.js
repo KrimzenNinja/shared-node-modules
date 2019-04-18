@@ -1,7 +1,7 @@
-'use strict'
+'use strict';
 
-const IsRequiredError = require('./is-required-error')
+const IsRequiredError = require('./is-required-error');
 
 module.exports = {
-    IsRequiredError
-}
+    IsRequiredError,
+};
