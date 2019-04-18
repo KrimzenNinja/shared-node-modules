@@ -1,13 +1,14 @@
 {
   "name": "@krimzen-ninja/common-errors",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "engines": {
     "node": "^10.14.1",
     "npm": ">= 6.4.1"
   },
-  "description":
-    "A collection of custom common errors that can be used across projects and modules.",
-  "files": ["src"],
+  "description": "A collection of custom common errors that can be used across projects and modules.",
+  "files": [
+    "src"
+  ],
   "main": "./src/index.js",
   "scripts": {
     "coverage": "nyc mocha",
@@ -23,15 +24,17 @@
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "preversion":
-      "npm run prettier && npm run lint && npm run coverage && npm run snyk && npm run docs && git add . && git commit -m \"adding build artifacts\"",
+    "preversion": "npm run prettier && npm run lint && npm run coverage && npm run snyk && npm run docs && git add . && git commit -m \"adding build artifacts\"",
     "postpublish": "git push origin master --follow-tags && chandler push"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KrimZen Ninja/krimzen-ninja-common-errors.git"
   },
-  "keywords": ["node", "KrimZen-Ninja"],
+  "keywords": [
+    "node",
+    "KrimZen-Ninja"
+  ],
   "author": "Ryan Kotzen <potz666@gmail.com> (https://github.com/KrimZen Ninja)",
   "license": "MIT",
   "bugs": {
